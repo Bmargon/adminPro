@@ -11,7 +11,7 @@ export class GraficasDonComponent implements OnInit {
 
   @Input('ChartLabels') doughnutChartLabels: Label[] = [];
   @Input('ChartData') doughnutChartData: MultiDataSet = [];
-  @Input('ChartType') doughnutChartType: ChartType = '';
+  @Input('ChartType') doughnutChartType: ChartType;
   constructor() {
   }
 

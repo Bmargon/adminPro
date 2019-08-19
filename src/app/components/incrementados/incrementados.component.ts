@@ -11,8 +11,8 @@ export class IncrementadosComponent implements OnInit {
   @Input('nombre') leyenda: string = 'Leyenda';
 
   @Output() cambioValor: EventEmitter<number> = new EventEmitter();
-  
-  @ViewChild('txtProgress') txtProgress: ElementRef;
+
+  @ViewChild('txtProgress', {static: false}) txtProgress: ElementRef;
 
 
   constructor() {
