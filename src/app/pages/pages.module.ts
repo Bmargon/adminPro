@@ -15,6 +15,7 @@ import { SharedModule } from '../shared/shared.module';
 import { pagesRoutesAdmin } from './pages.routes';
 import { IncrementadosComponent } from '../components/incrementados/incrementados.component';
 import { GraficasDonComponent } from '../components/graficas-don/graficas-don.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
     declarations: [
@@ -23,7 +24,8 @@ import { GraficasDonComponent } from '../components/graficas-don/graficas-don.co
         ProgressComponent,
         Graficas1Component,
         IncrementadosComponent,
-        GraficasDonComponent
+        GraficasDonComponent,
+        AccountSettingsComponent
     ],
     exports: [
         DashBoardComponent,

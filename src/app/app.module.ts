@@ -10,6 +10,9 @@ import { LogInComponent } from './log-in/log-in.component';
 import { RegisterComponent } from './log-in/register.component';
 import { FormsModule } from '@angular/forms';
 
+// servicios
+import { ServiceModule } from './providers/service.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,9 +23,10 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     PagesModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
-  providers: [],
+  providers: [  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
