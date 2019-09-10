@@ -16,6 +16,8 @@ import { pagesRoutesAdmin } from './pages.routes';
 import { IncrementadosComponent } from '../components/incrementados/incrementados.component';
 import { GraficasDonComponent } from '../components/graficas-don/graficas-don.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 @NgModule({
     declarations: [
@@ -25,7 +27,9 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
         Graficas1Component,
         IncrementadosComponent,
         GraficasDonComponent,
-        AccountSettingsComponent
+        AccountSettingsComponent,
+        PromesasComponent,
+        RxjsComponent
     ],
     exports: [
         DashBoardComponent,
