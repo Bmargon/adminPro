@@ -10,6 +10,9 @@ import { AppComponent } from './app.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { RegisterComponent } from './log-in/register.component';
 
+
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+
 // servicios
 import { ServiceModule } from './providers/service.module';
 
@@ -25,8 +28,9 @@ import { ServiceModule } from './providers/service.module';
     AppRoutingModule,
     FormsModule,
     ServiceModule,
-    ReactiveFormsModule
-  ],
+    ReactiveFormsModule,
+    SweetAlert2Module
+    ],
   providers: [  ],
   bootstrap: [AppComponent]
 })

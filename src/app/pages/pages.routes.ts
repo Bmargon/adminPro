@@ -12,6 +12,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 
 // guard
 import { LoginGuardGuard } from '../providers/guards/login-guard.guard';
+import { ProfileComponent } from './profile/profile.component';
 
 
 const pagesRoutes: Routes = [
@@ -25,6 +26,7 @@ const pagesRoutes: Routes = [
             { path: 'promesas', component: PromesasComponent},
             { path: 'rxjs', component: RxjsComponent},
             { path: 'account_settings', component: AccountSettingsComponent},
+            { path: 'perfil', component: ProfileComponent, data: {titulo: 'Perfil de usuario'}},
             { path: '', redirectTo: 'dashboard', pathMatch: 'full'}
         ]
     }

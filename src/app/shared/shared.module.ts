@@ -6,6 +6,7 @@ import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { BreadCrumsComponent } from './bread-crums/bread-crums.component';
 import { RouterModule } from '@angular/router';
+import { PipesModule } from '../pipes/pipes.module';
 
 
 
@@ -23,8 +24,10 @@ import { RouterModule } from '@angular/router';
         SidebarComponent,
         BreadCrumsComponent,
     ],
-    imports: [ RouterModule,
-        CommonModule ]
+    imports: [ 
+        RouterModule,
+        CommonModule,
+    PipesModule ]
 })
 
 export class SharedModule {}
